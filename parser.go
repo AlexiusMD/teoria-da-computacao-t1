@@ -159,11 +159,7 @@ func main() {
 
 	encodedMachine := createFinalEncodedTuringMachineString(&transitions)
 
-	fmt.Println(encodedMachine)
-
-	// for i, v := range transitions {
-	// 	fmt.Println("Transition " + strconv.Itoa(i) + " is: " + v)
-	// }
+	fmt.Printf(encodedMachine)
 
 	if err := scanner.Err(); err != nil {
 		fmt.Printf("Erro ao ler o arquivo: %s\n", err)

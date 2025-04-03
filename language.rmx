@@ -1,0 +1,14 @@
+states:
+    first
+    second
+
+-- Ordem de leitura das transições
+-- Estado atual, O que está lendo, Para onde vai, O que escreve, Para qual lado o cabeçote vai
+
+transitions:
+    first 0 first 0 >
+    first 1 first 1 >
+    first * second * <
+    second 1 second 0 <
+    second 0 first 1 <
+    second * first 1 >
